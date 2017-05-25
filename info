@@ -1,0 +1,23 @@
+Asa cum se specifica in enuntul temei, atat clientul, cat si serverul folosesc
+socket TCP pentru a comunica (client - bancomat) si socket UDP pentru serviciul
+de deblocare.
+
+In cadrul clientului se obtin cei 2 socketi (TCP si UDP), dupa care clientul
+se conecteaza la server. Prin multiplexare, se iau actiunile corespunzatoare:
+- daca se primesc date de la stdin (comenzi de la tastatura), se interpreteaza
+comanda respectiva si se trimite catre server (daca este corecta)
+- daca se primesc date de la server, se afiseaza mesajul primit pe socketul
+TCP sau UDP
+
+Pentru a salva datele clientilor (in cadrul serverului), se aloca dinamic 
+vectori pentru fiecare informatie din fisierul de intrare. Pe langa acestea,
+ma folosesc de inca 2 vectori pentru a memora: daca un client este sau nu logat
+sau blocat (logged[] | -1 = blocat | 1 = logat), socketul de pe care s-a
+conectat un client (sockl[]; cand clientul se deconecteaza, se reseteaza
+valoarea respectiva din sockl[]). In functie de mesajul primit, se iau 
+actiunile corespunzatoare: putmoney / getmoney / login / logout etc.
+
+Am folosit la rezolvarea temei scheletul de cod din laboratorul 8. Am arhivat
+si 2 fisiere log (testare manuala).
+Compilare: make
+Rulare: make run_server / run_client

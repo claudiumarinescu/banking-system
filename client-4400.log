@@ -1,0 +1,67 @@
+login 456123 8734
+ATM> -3 : Pin gresit
+
+login 456123 8799
+ATM> Welcome Popovici George
+
+listsoldsa
+ATM> -6 : Operatie esuata
+
+listsold
+ATM> 9000.00
+
+getmoney 459
+ATM> -9 : Suma nu este multiplu de 10
+
+getmoney 450
+ATM> Suma 450 retrasa cu succes
+
+listsold
+ATM> 8550.00
+
+putmoney 1.15
+ATM> Suma depusa cu succes
+
+listsold
+ATM> 8551.15
+
+getmoney 20000
+ATM> -8 : Fonduri insuficiente
+
+unlock
+UNLOCK> -6 : Operatie esuata
+
+logout
+ATM> Deconectare de la bancomat
+
+login 456123 7643
+ATM> -3 : Pin gresit
+
+login 456123 3214
+ATM> -3 : Pin gresit
+
+login 456123 4325
+ATM> -3 : Pin gresit
+
+login 112233 1234
+ATM> Welcome Marinescu Claudiu
+
+listsold
+UNLOCK> -7 : Deblocare esuata
+
+listsold
+ATM> 500.00
+
+logout
+ATM> Deconectare de la bancomat
+
+login 456123 1241
+ATM> -5 : Card blocat
+
+unlock
+UNLOCK> Trimite parola secreta
+
+qwerty
+UNLOCK> Client deblocat
+
+quit
