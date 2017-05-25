@@ -5,5 +5,5 @@ This project comes as an example of real-life application of TCP and UDP. The co
 
 More information can be found in Enunt.pdf and info file (they are both in Romanian).
 
-Compile: make
-Run: make run_server / run_client
+Compile: make.
+Run: make run_server / run_client.
